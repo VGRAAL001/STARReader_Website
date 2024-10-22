@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - STAR Reader</title>
+    <link rel="stylesheet" href="About.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="STAR Logo.png" alt="STAR Reader Logo">
+            <h1>STAR Reader</h1>
+        </div>
+    </div>
+    
+    <nav>
+        <ul>
+              <div class="tooltip-container">
+    <li><a  href="index.html"> Home Page</a></li>
+    <span class="tooltip-text">Home Page</span>
+    </div>
+
+    <div class="tooltip-container">
+    <li><a  class= "active" href="About.html">About STAR Reader</a></li>
+    <span class="tooltip-text">Learn About The System</span>
+    </div>
+    
+
+    <div class="tooltip-container">
+    <li><a href="GetToKnowUs.html">Get To Know Us</a></li>
+    <span class="tooltip-text">Get To Know The Team And Sponsors</span>
+    </div>
+
+    <div class="tooltip-container">
+    <li><a href="TakeALook.html">Take A Look</a></li>
+    <span class="tooltip-text">Watch a demo video</span>
+    </div>
+        </ul>
+    </nav>
+</header>
+
+<section class="about">
+    <h2>About STAR Reader</h2>
+    <p id="about-text">
+        STAR aims to deliver a complete system that enables visually impaired learners to confidently write their matric examinations
+        without assistance. The proposed system offers a transformative solution to the challenges faced by impaired students, especially during examinations.
+        <span id="dots">...</span><span id="more-text" style="display:none;">
+        Leveraging advanced AI technology and additional platforms, the system provides real-time assistance in reading examination content using a tablet
+        and audio device, eliminating the need for manual assistance from a reader. By utilizing the technologies put forward, selected exam questions are
+        instantly vocalized to the students in a non-robotic voice, enabling them to navigate and engage with the content independently. Additionally, the
+        multilingual support enhances the usability and inclusivity of the system where English and Afrikaans are at the forefront, ensuring a tailored
+        examination experience for every student. Essentially, our system is a paradigm shift in the field of educational accessibility. We want to
+        empower visually impaired students to overcome obstacles and establish a more equal and inclusive educational environment where all students,
+        regardless of reading disability or difficulty, can reach their full academic potential. Overall, STAR Reader aims to streamline the examination process,
+        promote accessibility, and empower visually impaired students to excel academically with confidence and independence.
+        </span>
+    </p>
+    <button onclick="toggleText()" id="read-more-btn">Read more</button>
+</section>
+
+<script>
+function toggleText() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more-text");
+    var btnText = document.getElementById("read-more-btn");
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+    }
+}
+</script>
+
+<section class="features">
+    <div class="feature">
+        <div class="tooltip-container">
+            <h3 class="feature-title" onclick="toggleFeature('feature1')">
+                AI-Assisted Learning Tools
+            </h3>
+            <span class="tooltip-text">Click to find out more about AI-Assisted Learning Tools</span>
+        </div>
+        <div class="feature-content" id="feature1" style="display:none;">
+            <p>
+                Using Azure AI Speech, our platform will be able to accurately scan assessment questions from digital papers thanks to its text-to-speech technology.
+                Through seamless integration with tactile interfaces and screen readers,
+                the system vocalizes the questions instantaneously, making it possible for students with visual difficulties to access and comprehend with ease.
+            </p>
+            <img id="image1" class="feature-image" src="AI Assisted Learning.png" alt="AI Tools">
+        </div>
+    </div>
+    <div class="feature">
+        <div class="tooltip-container">
+            <h3 class="feature-title" onclick="toggleFeature('feature2')">
+                Secure Infrastructure
+            </h3>
+            <span class="tooltip-text">Click to find out more about Secure Infrastructure</span>
+        </div>
+        <div class="feature-content" id="feature2" style="display:none;">
+            <p>
+                Maintaining the integrity and security of examinations is of utmost importance.
+                Our system will use strict authentication procedures to protect the integrity of the assessment material and student data.
+                This will prevent unauthorized access, maintaining the credibility and fairness of the examination process.
+            </p>
+            <img id="image2" class="feature-image" src="Secure Infrastructure.png" alt="Secure Infrastructure">
+        </div>
+    </div>
+    <div class="feature">
+        <div class="tooltip-container">
+            <h3 class="feature-title" onclick="toggleFeature('feature3')">
+                Multilingual Support
+            </h3>
+            <span class="tooltip-text">Click to find out more about Multilingual Support</span>
+        </div>
+        <div class="feature-content" id="feature3" style="display:none;">
+            <p>
+                Our system provides extensive language support. Our system enables examination questions to be heard aloud in different South African languages and accents.
+                This will enable students to engage with exam content in their preferred accent, thereby improving comprehension and performance.
+                The system will be able to read other languages like Afrikaans and Zulu.
+            </p>
+            <img id="image3" class="feature-image" src="Multilingual Support.png" alt="Multilingual Support">
+        </div>
+    </div>
+    <div class="feature">
+        <div class="tooltip-container">
+            <h3 class="feature-title" onclick="toggleFeature('feature4')">
+                Collaboration with Educational Institutions
+            </h3>
+            <span class="tooltip-text">Click to find out more about Collaboration with Educational Institutions</span>
+        </div>
+        <div class="feature-content" id="feature4" style="display:none;">
+            <p>
+                We will collaborate with multiple schools to facilitate seamless adoption and implementation of the system
+                and we will provide comprehensive training and support to educators and assessment administrators.
+                Through establishing collaborations with various stakeholders within the educational domain,
+                we guarantee a smooth integration of our system with the current examination framework.
+                This will enhance accessibility without causing any disturbance to established processes.
+            </p>
+            <img id="image4" class="feature-image" src="Collaboration With Education.png" alt="Collaboration with Educational Institutions">
+        </div>
+    </div>
+</section>
+
+
+<section class="cta">
+    <h2>We're dedicated to empowering visually impaired learners.</h2>
+    <p>If you would like to learn more about how the app will work, take a look at our demo.</p>
+    <div class="tooltip-container">
+    <a href="TakeALook.html" class="btn">Take A Look</a>
+    <span class="tooltip-text">Click see demo video</span>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy;2024 by STAR Reader. All rights reserved.</p>
+        <p>Enterprise Solutions 365 | University of Cape Town</p>
+        <img src="es365-logo.png" alt="Enterprise Solutions 365 Logo">
+        <img src="UCT Logo.png" alt="UCT Logo">
+    </div>
+</footer>
+
+<script>
+function toggleFeature(featureId) {
+    var featureContent = document.getElementById(featureId);
+    featureContent.style.display = featureContent.style.display === 'none' ? 'block' : 'none';
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,315 @@
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the logo horizontally */
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 15px;
+}
+
+
+header {
+    background-color: #102540;
+    color: white;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #A0C8D6;
+}
+
+header nav ul li a.active {
+    color: #67AAC3;
+}
+
+footer {
+    background-color: #102540;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer img {
+    height: 50px; /* Reduced footer image height */
+    margin-top: 10px;
+}
+
+.about {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.about h2 {
+    font-size: 28px;
+    color: #248EC2;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#read-more-btn {
+    background-color: #248EC2;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+#read-more-btn:hover {
+    background-color: #67AAC3;
+}
+
+.cta .btn {
+    background-color: #A0CF3C;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+
+.features {
+  
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.feature {
+    margin-bottom: 20px; /* Space between features */
+    max-width: 800px; /* Set a maximum width for feature blocks */
+    width: 100%; /* Allow feature blocks to take full width up to max */
+}
+
+.feature-title {
+    cursor: pointer; /* Pointer cursor for clickable title */
+    color: #A0CF3C; /* Title color */
+    text-align: center; /* Center the title text */
+}
+
+.feature-content {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center vertically */
+    margin-top: 10px; /* Space above content */
+}
+
+.feature-content img {
+   width: 100%;
+        height: auto;
+    align-items: center;
+}
+
+.feature-content p {
+ font-size: 16px;
+        line-height: 1.5;
+}
+
+
+.tooltip-container {
+    position: relative;
+    display: inline-block; /* Allow container to fit the title */
+}
+
+.tooltip-text {
+    visibility: hidden; /* Initially hide the tooltip */
+    width: 160px; /* Set a width */
+    background-color: #A0C8D6; /* Background color */
+    color: #248EC2; /* Text color */
+    text-align: center; /* Center text */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Padding */
+    position: absolute; /* Position the tooltip */
+    z-index: 1; /* Ensure tooltip is above other elements */
+    bottom: 125%; /* Position above the title */
+    left: 50%; /* Center the tooltip */
+    margin-left: -80px; /* Adjust to center the tooltip */
+    opacity: 0; /* Hide tooltip initially */
+    transition: opacity 0.3s; /* Transition for fade effect */
+}
+
+.tooltip-container:hover .tooltip-text {
+    visibility: visible; /* Show tooltip on hover */
+    opacity: 1; /* Fade in effect */
+}
+
+.feature-title {
+    cursor: pointer; /* Pointer cursor for clickable title */
+    color: #A0CF3C; /* Title color */
+}
+
+
+
+
+.cta h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cta p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.cta {
+    background-color: #248EC2;
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* Same as footer */
+    margin: 0 auto; /* Centers the section */
+    width: 100%; /* Ensures full width like the footer */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    position: relative; /* Adjust based on layout needs */
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 95%; /* Make the container wider on small screens */
+    }
+
+    .about h2 {
+        font-size: 24px; /* Adjust h2 font size */
+    }
+
+    .about p {
+        font-size: 16px; /* Adjust paragraph font size */
+    }
+
+    #read-more-btn, .cta .btn {
+        padding: 5px 8px; /* Adjust button padding */
+        font-size: 10px; /* Adjust button font size */
+    }
+
+    .features {
+        flex-direction: column; /* Stack features vertically */
+        align-items: center; /* Center features */
+    }
+
+    .feature {
+        width: 100%; /* Full width for feature on small screens */
+        margin-bottom: 15px; /* Adjust margin */
+    }
+
+    .feature h3 {
+        font-size: 22px; /* Smaller font size for feature title */
+    }
+
+    .feature p {
+        font-size: 14px; /* Smaller font size for feature description */
+    }
+
+    .feature img {
+        width: 90%; /* Make images larger relative to the small screen */
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /* Add styles specific to small devices if needed */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .about h2 {
+        font-size: 26px; /* Slightly increase h2 font size */
+    }
+
+    .about p {
+        font-size: 17px; /* Slightly increase paragraph font size */
+    }
+
+    .features {
+        justify-content: space-around; /* More space between features */
+    }
+
+    .feature {
+        width: 45%; /* Adjust feature width for medium screens */
+    }
+
+    .feature img {
+        width: 75%; /* Slightly smaller for medium devices */
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container {
+        width: 80%; /* Keep default width for larger devices */
+    }
+
+    .feature {
+        width: 48%; /* Maintain feature width */
+    }
+
+    .feature img {
+        width: 70%; /* Maintain smaller size for larger devices */
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .about h2 {
+        font-size: 28px; /* Maintain larger h2 font size */
+    }
+
+    .about p {
+        font-size: 18px; /* Maintain standard paragraph size */
+    }
+
+    #read-more-btn, .cta .btn {
+        padding: 5px 10px; /* Maintain button size */
+        font-size: 12px; /* Maintain button font size */
+    }
+
+    .feature img {
+        width: 60%; /* Make feature images smaller for extra-large devices */
+    }
+}

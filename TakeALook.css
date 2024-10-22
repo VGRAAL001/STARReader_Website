@@ -1,0 +1,198 @@
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the logo horizontally */
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 15px;
+}
+
+header {
+    background-color: #102540;
+    color: white;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #A0C8D6;
+}
+
+header nav ul li a.active {
+    color: #67AAC3;
+}
+
+.look-section {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.look-section h2 {
+    color: #A0CF3C;
+}
+
+.video-demo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.video-demo video {
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #102540;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer img {
+    height: 60px;
+    margin-top: 10px;
+}
+
+
+.guides {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically if needed */
+    margin-top: 20px; /* Optional: Add some spacing above the buttons */
+    background-color: #fff;
+}
+
+.guide-button {
+    background-color: #A0CF3C; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 15px; /* Padding for button size */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    display: inline-block; /* Make it behave like a block */
+    margin: 5px 0; /* Margin for spacing between buttons */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.guide-button:hover {
+    background-color: #67AAC3; /* Change color on hover */
+}
+
+
+.tooltip-container {
+    position: relative;
+    display: inline-block; /* Allow container to fit the title */
+}
+
+.tooltip-text {
+    visibility: hidden; /* Initially hide the tooltip */
+    width: 160px; /* Set a width */
+    background-color: #A0C8D6; /* Background color */
+    color: #248EC2; /* Text color */
+    text-align: center; /* Center text */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Padding */
+    position: absolute; /* Position the tooltip */
+    z-index: 1; /* Ensure tooltip is above other elements */
+    bottom: 125%; /* Position above the title */
+    left: 50%; /* Center the tooltip */
+    margin-left: -80px; /* Adjust to center the tooltip */
+    opacity: 0; /* Hide tooltip initially */
+    transition: opacity 0.3s; /* Transition for fade effect */
+}
+
+.tooltip-container:hover .tooltip-text {
+    visibility: visible; /* Show tooltip on hover */
+    opacity: 1; /* Fade in effect */
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 95%; /* Make the container wider on small screens */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center; /* Center navigation items */
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Space between navigation items */
+    }
+
+    .video-demo {
+        margin-top: 15px; /* Adjust margin for smaller screens */
+    }
+
+    footer {
+        padding: 15px 0; /* Adjust footer padding */
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /* Add styles specific to small devices if needed */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .video-demo {
+        margin-top: 25px; /* Add margin for medium devices */
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container {
+        width: 80%; /* Maintain default width for larger devices */
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .look-section h2 {
+        font-size: 32px; /* Increase heading size for larger screens */
+    }
+
+    footer {
+        padding: 25px 0; /* Increase footer padding for larger screens */
+    }
+}
