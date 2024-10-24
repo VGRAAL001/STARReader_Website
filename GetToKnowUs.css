@@ -268,19 +268,35 @@ footer img {
 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
     .team-members {
-        justify-content: space-around;
+        flex-direction: row;
+        justify-content: space-between; /* Distribute team members evenly */
     }
 
     .member {
-        width: 30%;
+        width: 45%; /* Adjust team member width for medium devices */
+    }
+
+    .member img {
+        width: 100%; /* Ensure images are responsive */
     }
 
     .sponsor-info {
-        justify-content: space-between;
+        flex-direction: row;
+        justify-content: space-between; /* Align sponsor images horizontally */
+    }
+
+    .sponsor-info img {
+        width: 80%; /* Scale down sponsor images slightly */
+        padding: 15px;
+    }
+
+    footer {
+        padding: 20px 0; /* Maintain consistent padding for the footer */
     }
 }
+
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
