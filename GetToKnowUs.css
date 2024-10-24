@@ -270,6 +270,60 @@ footer img {
     }
 }
 
+    /* Extra small devices (very small phones, 480px and down) */
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 100%; /* Make the container full width on very small screens */
+        padding: 0 10px; /* Add a bit of padding to the sides */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center; /* Center navigation items */
+    }
+
+    nav ul li {
+        width: 100%; /* Ensure each navigation item takes full width */
+        text-align: center; /* Center-align each item */
+    }
+
+    nav ul li a {
+        padding: 10px 0; /* Add padding for better touch area */
+        display: block; /* Ensure each link takes the full width */
+    }
+
+    /* Stack team members vertically */
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member {
+        width: 100%; /* Team members take up the full width on very small screens */
+        margin-bottom: 20px; /* Add space between team members */
+    }
+
+    .member img {
+        width: 100%; /* Ensure images are responsive */
+    }
+
+    /* Adjust sponsor section */
+    .sponsor-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sponsor-info img {
+        width: 100%; /* Ensure sponsor images are responsive */
+        padding: 10px;
+    }
+
+    /* Adjust footer padding */
+    footer {
+        padding: 10px 0;
+    }
+}
+
 
 
 /* Medium devices (landscape tablets, 768px and up) */
