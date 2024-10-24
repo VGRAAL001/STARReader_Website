@@ -126,7 +126,7 @@ footer img {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .container {
+       .container {
         width: 95%; /* Make the container wider on small screens */
     }
 
@@ -151,7 +151,9 @@ footer img {
         height: 35px; /* Slightly reduce logo size for small screens */
     }
 
-   
+    .video-demo {
+        margin-top: 15px; /* Adjust margin for smaller screens */
+    }
 
     footer {
         padding: 15px 0; /* Adjust footer padding */
