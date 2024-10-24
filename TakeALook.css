@@ -1,3 +1,4 @@
+/* General body styles */
 body {
     font-family: Verdana, sans-serif;
     margin: 0;
@@ -5,11 +6,13 @@ body {
     background-color: #f9f9f9;
 }
 
+/* Container for general layout */
 .container {
     width: 80%;
     margin: 0 auto;
 }
 
+/* Logo and header styles */
 .logo {
     display: flex;
     align-items: center;
@@ -21,6 +24,7 @@ body {
     margin-right: 15px;
 }
 
+/* Header and Navigation */
 header {
     background-color: #102540;
     color: white;
@@ -53,6 +57,7 @@ header nav ul li a.active {
     color: #67AAC3;
 }
 
+/* Look Section */
 .look-section {
     background-color: #fff;
     padding: 40px 0;
@@ -63,6 +68,7 @@ header nav ul li a.active {
     color: #A0CF3C;
 }
 
+/* Video Demo Section */
 .video-demo {
     margin-top: 20px;
     text-align: center;
@@ -75,6 +81,7 @@ header nav ul li a.active {
     border-radius: 8px;
 }
 
+/* Footer */
 footer {
     background-color: #102540;
     color: white;
@@ -87,61 +94,62 @@ footer img {
     margin-top: 10px;
 }
 
-
+/* Guides Section */
 .guides {
-    display: flex; /* Use flexbox for alignment */
+    display: flex;
     flex-direction: column; /* Stack buttons vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically if needed */
-    margin-top: 20px; /* Optional: Add some spacing above the buttons */
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
     background-color: #fff;
 }
 
 .guide-button {
-    background-color: #A0CF3C; /* Button background color */
-    color: white; /* Button text color */
-    padding: 10px 15px; /* Padding for button size */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Bold text */
-    display: inline-block; /* Make it behave like a block */
-    margin: 5px 0; /* Margin for spacing between buttons */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    background-color: #A0CF3C;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin: 5px 0;
+    transition: background-color 0.3s;
 }
 
 .guide-button:hover {
-    background-color: #67AAC3; /* Change color on hover */
+    background-color: #67AAC3;
 }
 
-
+/* Tooltip styles */
 .tooltip-container {
     position: relative;
-    display: inline-block; /* Allow container to fit the title */
+    display: inline-block;
 }
 
 .tooltip-text {
-    visibility: hidden; /* Initially hide the tooltip */
-    width: 160px; /* Set a width */
-    background-color: #A0C8D6; /* Background color */
-    color: #248EC2; /* Text color */
-    text-align: center; /* Center text */
-    border-radius: 5px; /* Rounded corners */
-    padding: 5px; /* Padding */
-    position: absolute; /* Position the tooltip */
-    z-index: 1; /* Ensure tooltip is above other elements */
-    bottom: 125%; /* Position above the title */
-    left: 50%; /* Center the tooltip */
-    margin-left: -80px; /* Adjust to center the tooltip */
-    opacity: 0; /* Hide tooltip initially */
-    transition: opacity 0.3s; /* Transition for fade effect */
+    visibility: hidden;
+    width: 160px;
+    background-color: #A0C8D6;
+    color: #248EC2;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
 .tooltip-container:hover .tooltip-text {
-    visibility: visible; /* Show tooltip on hover */
-    opacity: 1; /* Fade in effect */
+    visibility: visible;
+    opacity: 1;
 }
 
+/* Responsive Design */
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -151,11 +159,22 @@ footer img {
 
     nav ul {
         flex-direction: column; /* Stack navigation items vertically */
-        align-items: center; /* Center navigation items */
+        align-items: center;
     }
 
     nav ul li {
-        margin-bottom: 10px; /* Space between navigation items */
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .guides {
+        margin-top: 10px; /* Adjust margin for smaller screens */
     }
 
     .video-demo {
@@ -175,24 +194,24 @@ footer img {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .video-demo {
-        margin-top: 25px; /* Add margin for medium devices */
+        margin-top: 25px;
     }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .container {
-        width: 80%; /* Maintain default width for larger devices */
+        width: 80%;
     }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .look-section h2 {
-        font-size: 32px; /* Increase heading size for larger screens */
+        font-size: 32px;
     }
 
     footer {
-        padding: 25px 0; /* Increase footer padding for larger screens */
+        padding: 25px 0;
     }
 }

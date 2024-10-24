@@ -1,3 +1,4 @@
+/* General body styles */
 body {
     font-family: Verdana, sans-serif;
     margin: 0;
@@ -5,11 +6,13 @@ body {
     background-color: #f9f9f9;
 }
 
+/* Container for general layout */
 .container {
     width: 80%;
     margin: 0 auto;
 }
 
+/* Logo and header styles */
 .logo {
     display: flex;
     align-items: center;
@@ -21,6 +24,7 @@ body {
     margin-right: 15px;
 }
 
+/* Header and Navigation */
 header {
     background-color: #102540;
     color: white;
@@ -53,6 +57,7 @@ header nav ul li a.active {
     color: #67AAC3;
 }
 
+/* Footer */
 footer {
     background-color: #102540;
     color: white;
@@ -65,7 +70,7 @@ footer img {
     margin-top: 10px;
 }
 
-
+/* Motivation Section */
 .motivation-section {
     background-color: #fff;
     padding: 40px 0;
@@ -76,6 +81,7 @@ footer img {
     color: #A0CF3C;
 }
 
+/* Video Demo Section */
 .video-demo {
     margin-top: 20px;
     text-align: center;
@@ -88,38 +94,35 @@ footer img {
     border-radius: 8px;
 }
 
-
-
+/* Tooltip styles */
 .tooltip-container {
     position: relative;
     display: inline-block; /* Allow container to fit the title */
 }
 
 .tooltip-text {
-    visibility: hidden; /* Initially hide the tooltip */
-    width: 160px; /* Set a width */
-    background-color: #A0C8D6; /* Background color */
-    color: #248EC2; /* Text color */
-    text-align: center; /* Center text */
-    border-radius: 5px; /* Rounded corners */
-    padding: 5px; /* Padding */
-    position: absolute; /* Position the tooltip */
-    z-index: 1; /* Ensure tooltip is above other elements */
-    bottom: 125%; /* Position above the title */
-    left: 50%; /* Center the tooltip */
-    margin-left: -80px; /* Adjust to center the tooltip */
-    opacity: 0; /* Hide tooltip initially */
-    transition: opacity 0.3s; /* Transition for fade effect */
+    visibility: hidden;
+    width: 160px;
+    background-color: #A0C8D6;
+    color: #248EC2;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
 .tooltip-container:hover .tooltip-text {
-    visibility: visible; /* Show tooltip on hover */
-    opacity: 1; /* Fade in effect */
+    visibility: visible;
+    opacity: 1;
 }
 
-
-
-
+/* Responsive Design */
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -130,15 +133,21 @@ footer img {
     nav ul {
         flex-direction: column; /* Stack navigation items vertically */
         align-items: center; /* Center navigation items */
+        padding: 0; /* Remove any additional padding */
     }
 
     nav ul li {
         margin-bottom: 10px; /* Space between navigation items */
+        width: 100%; /* Ensure each navigation item takes full width */
+        text-align: center; /* Center-align each item */
     }
 
-    .video-demo {
-        margin-top: 15px; /* Adjust margin for smaller screens */
+    nav ul li a {
+        padding: 10px 0; /* Add padding for better touch area */
+        display: block; /* Ensure each link takes the full width */
     }
+
+   
 
     footer {
         padding: 15px 0; /* Adjust footer padding */

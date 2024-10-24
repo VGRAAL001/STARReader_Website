@@ -21,7 +21,6 @@ body {
     margin-right: 15px;
 }
 
-
 header {
     background-color: #102540;
     color: white;
@@ -123,21 +122,20 @@ footer img {
     margin-bottom: 20px;
 }
 
-    .feature h3 {
-        font-size: 24px;
-        color: #A0CF3C;
-    }
+.feature h3 {
+    font-size: 24px;
+    color: #A0CF3C;
+}
 
-    .feature p {
-        font-size: 16px;
-        line-height: 1.5;
-    }
+.feature p {
+    font-size: 16px;
+    line-height: 1.5;
+}
 
-    .feature img {
-        width: 100%;
-        height: auto;
-    }
-
+.feature img {
+    width: 100%;
+    height: auto;
+}
 
 .tooltip-container {
     position: relative;
@@ -177,20 +175,15 @@ footer img {
     position: relative; /* Adjust based on layout needs */
 }
 
-    .cta h2 {
-        font-size: 28px;
-        margin-bottom: 20px;
-    }
+.cta h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
 
-
-    
-
-    .cta p {
-        font-size: 18px;
-        margin-bottom: 30px;
-    }
-
-
+.cta p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
 
 .Considerations-section {
     background-color: #eef2f5;
@@ -202,7 +195,7 @@ footer img {
     color: #002147;
 }
 
-.Considerations{
+.Considerations {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -213,6 +206,7 @@ footer img {
     width: 460px;
     padding: 20px;
 }
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .container {
@@ -253,11 +247,39 @@ footer img {
     .feature img {
         width: 90%; /* Make images larger relative to the small screen */
     }
-}
+     .container {
+        width: 95%; /* Make the container wider on small screens */
+    }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    /* Add styles specific to small devices if needed */
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center; /* Center navigation items */
+        padding: 0; /* Remove any additional padding */
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Space between navigation items */
+        width: 100%; /* Ensure each navigation item takes full width */
+        text-align: center; /* Center-align each item */
+    }
+
+    nav ul li a {
+        padding: 10px 0; /* Add padding for better touch area */
+        display: block; /* Ensure each link takes the full width */
+    }
+
+       .Considerations {
+        flex-direction: column;
+    }
+
+    .Considerations img {
+        width: 100%;
+        padding: 10px;
+    }
+
+    footer {
+        padding: 15px 0; /* Adjust footer padding */
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

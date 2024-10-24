@@ -1,3 +1,4 @@
+/* General body styles */
 body {
     font-family: Verdana, sans-serif;
     margin: 0;
@@ -27,31 +28,32 @@ header {
     padding: 20px 0;
 }
 
+/* Tooltip styles */
 .tooltip-container {
     position: relative;
-    display: inline-block; /* Allow container to fit the title */
+    display: inline-block;
 }
 
 .tooltip-text {
-    visibility: hidden; /* Initially hide the tooltip */
-    width: 160px; /* Set a width */
-    background-color: #A0C8D6; /* Background color */
-    color: #248EC2; /* Text color */
-    text-align: center; /* Center text */
-    border-radius: 5px; /* Rounded corners */
-    padding: 5px; /* Padding */
-    position: absolute; /* Position the tooltip */
-    z-index: 1; /* Ensure tooltip is above other elements */
-    bottom: 125%; /* Position above the title */
-    left: 50%; /* Center the tooltip */
-    margin-left: -80px; /* Adjust to center the tooltip */
-    opacity: 0; /* Hide tooltip initially */
-    transition: opacity 0.3s; /* Transition for fade effect */
+    visibility: hidden;
+    width: 160px;
+    background-color: #A0C8D6;
+    color: #248EC2;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
 .tooltip-container:hover .tooltip-text {
-    visibility: visible; /* Show tooltip on hover */
-    opacity: 1; /* Fade in effect */
+    visibility: visible;
+    opacity: 1;
 }
 
 nav ul {
@@ -80,6 +82,7 @@ header nav ul li a.active {
     color: #67AAC3;
 }
 
+/* Footer styles */
 footer {
     background-color: #102540;
     color: white;
@@ -92,6 +95,7 @@ footer img {
     margin-top: 10px;
 }
 
+/* Team Section */
 .team-section {
     background-color: #fff;
     padding: 40px 0;
@@ -121,6 +125,7 @@ footer img {
     margin-top: 15px;
 }
 
+/* Sponsor Section */
 .sponsor-section {
     background-color: #eef2f5;
     padding: 40px 0;
@@ -143,6 +148,24 @@ footer img {
     padding: 20px;
 }
 
+/* Call to Action Section */
+.cta {
+    background-color: #102540;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.cta h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .cta .btn {
     background-color: #A0CF3C;
     color: white;
@@ -153,25 +176,12 @@ footer img {
     font-size: 20px;
     display: inline-block;
     margin-left: 5px;
+    transition: background-color 0.3s;
 }
 
-.cta h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    text-align: center;
+.cta .btn:hover {
+    background-color: #67AAC3;
 }
-
-
-
-.cta {
-    background-color: #fff;
-    color: white;
-    text-align: center;
-    padding: 20px 0; /* Same as footer */
-    margin: 0 auto; /* Centers the section */
-    width: 100%; /* Ensures full width like the footer */
-    box-sizing: border-box; /* Ensures padding is included in the width */
-    position: relative; /* Adjust based on layout needs */
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -179,81 +189,74 @@ footer img {
         width: 95%; /* Make the container wider on small screens */
     }
 
-    .team-members {
-        flex-direction: column; /* Stack team members vertically */
-        align-items: center; /* Center team members */
-    }
-
-    .member {
-        width: 80%; /* Full width for member on small screens */
-        margin-bottom: 20px; /* Space between members */
-    }
-
-    .sponsor-info {
-        flex-direction: column; /* Stack sponsor images vertically */
-    }
-
-    .sponsor-info img {
-        width: 100%; /* Full width for sponsor images */
-        padding: 10px; /* Adjust padding */
-    }
-
-    header {
-        padding: 15px 0; /* Adjust header padding */
-    }
-
     nav ul {
         flex-direction: column; /* Stack navigation items vertically */
         align-items: center; /* Center navigation items */
+        padding: 0; /* Remove any additional padding */
     }
 
     nav ul li {
         margin-bottom: 10px; /* Space between navigation items */
+        width: 100%; /* Ensure each navigation item takes full width */
+        text-align: center; /* Center-align each item */
     }
-}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    /* Add styles specific to small devices if needed */
+    nav ul li a {
+        padding: 10px 0; /* Add padding for better touch area */
+        display: block; /* Ensure each link takes the full width */
+    }
+
+      .sponsor-info {
+        flex-direction: column;
+    }
+
+    .sponsor-info img {
+        width: 100%;
+        padding: 10px;
+    }
+
+    footer {
+        padding: 15px 0; /* Adjust footer padding */
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .team-members {
-        justify-content: space-around; /* Space out team members */
+        justify-content: space-around;
     }
 
     .member {
-        width: 30%; /* Slightly wider for medium devices */
+        width: 30%;
     }
 
     .sponsor-info {
-        justify-content: space-between; /* Space sponsor info on larger screens */
+        justify-content: space-between;
     }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .container {
-        width: 80%; /* Maintain default width for larger devices */
+        width: 80%;
     }
 
     .member {
-        width: 22%; /* Maintain default member width */
+        width: 22%;
     }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Extra large devices (1200px and up) */
 @media only screen and (min-width: 1200px) {
     .team-section h2 {
-        font-size: 32px; /* Increase heading size for larger screens */
+        font-size: 32px;
     }
 
     .sponsor-section h2 {
-        font-size: 28px; /* Increase sponsor heading size */
+        font-size: 28px;
     }
 
     .sponsor-info img {
-        width: 460px; /* Maintain size for large screens */
+        width: 460px;
     }
 }
