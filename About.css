@@ -166,22 +166,6 @@ footer img {
     opacity: 1; /* Fade in effect */
 }
 
-
-
-
-
-.cta h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.cta p {
-    font-size: 18px;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
 .cta {
     background-color: #248EC2;
     color: white;
@@ -193,29 +177,42 @@ footer img {
     position: relative; /* Adjust based on layout needs */
 }
 
-.Business-section {
-    background-color: #fff;
+    .cta h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+
+    
+
+    .cta p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+
+
+.Considerations-section {
+    background-color: #eef2f5;
     padding: 40px 0;
     text-align: center;
 }
 
-.Business-section h2 {
-    color: #248EC2;
+.Considerations-section h2 {
+    color: #002147;
 }
 
-.video-demo {
+.Considerations{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     margin-top: 20px;
-    text-align: center;
 }
 
-.video-demo video {
-    width: 100%;
-    max-width: 800px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+.Considerations img {
+    width: 460px;
+    padding: 20px;
 }
-
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .container {
