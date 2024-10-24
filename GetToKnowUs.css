@@ -143,6 +143,36 @@ footer img {
     padding: 20px;
 }
 
+.cta .btn {
+    background-color: #A0CF3C;
+    color: white;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.cta h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+
+.cta {
+    background-color: #fff;
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* Same as footer */
+    margin: 0 auto; /* Centers the section */
+    width: 100%; /* Ensures full width like the footer */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    position: relative; /* Adjust based on layout needs */
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .container {
