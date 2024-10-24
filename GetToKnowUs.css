@@ -213,7 +213,6 @@ footer img {
 .cta .btn:hover {
     background-color: #67AAC3;
 }
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .container {
@@ -237,22 +236,36 @@ footer img {
         display: block; /* Ensure each link takes the full width */
     }
 
-      .sponsor-info {
+    /* Stack team members vertically */
+    .team-members {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .member {
+        width: 90%; /* Make team members take up more width on small screens */
+    }
+
+    .member img {
+        width: 100%; /* Ensure images are responsive */
+    }
+
+    /* Adjust sponsor section */
+    .sponsor-info {
+        flex-direction: column;
+        align-items: center;
     }
 
     .sponsor-info img {
-        width: 100%;
+        width: 100%; /* Ensure sponsor images are responsive */
         padding: 10px;
     }
 
     footer {
         padding: 15px 0; /* Adjust footer padding */
     }
-    
-
-    
 }
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
