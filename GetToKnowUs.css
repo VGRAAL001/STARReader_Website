@@ -215,6 +215,8 @@ footer img {
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+   /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
     .container {
         width: 95%; /* Make the container wider on small screens */
     }
@@ -244,6 +246,7 @@ footer img {
 
     .member {
         width: 90%; /* Make team members take up more width on small screens */
+        margin-bottom: 20px; /* Add space between team members */
     }
 
     .member img {
@@ -261,10 +264,12 @@ footer img {
         padding: 10px;
     }
 
+    /* Adjust footer padding */
     footer {
-        padding: 15px 0; /* Adjust footer padding */
+        padding: 15px 0;
     }
 }
+
 
 
 /* Medium devices (landscape tablets, 768px and up) */
