@@ -66,6 +66,27 @@ footer img {
 }
 
 
+.motivation-section {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.motivation-section h2 {
+    color: #A0CF3C;
+}
+
+.video-demo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.video-demo video {
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
 
 
 
@@ -96,9 +117,40 @@ footer img {
     opacity: 1; /* Fade in effect */
 }
 
+
+.look-section {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.look-section h2 {
+    color: #A0CF3C;
+}
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
- 
+    .container {
+        width: 95%; /* Make the container wider on small screens */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center; /* Center navigation items */
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Space between navigation items */
+    }
+
+    .video-demo {
+        margin-top: 15px; /* Adjust margin for smaller screens */
+    }
+
+    footer {
+        padding: 15px 0; /* Adjust footer padding */
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -108,16 +160,25 @@ footer img {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-   
+    .video-demo {
+        margin-top: 25px; /* Add margin for medium devices */
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-   
+    .container {
+        width: 80%; /* Maintain default width for larger devices */
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    
+    .look-section h2 {
+        font-size: 32px; /* Increase heading size for larger screens */
+    }
+
+    footer {
+        padding: 25px 0; /* Increase footer padding for larger screens */
     }
 }
