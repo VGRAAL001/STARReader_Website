@@ -111,43 +111,32 @@ footer img {
     margin-left: 5px;
 }
 
-
 .features {
-  
-     display: flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px 0;
 }
 
 .feature {
-    margin-bottom: 20px; /* Space between features */
-    max-width: 800px; /* Set a maximum width for feature blocks */
-    width: 100%; /* Allow feature blocks to take full width up to max */
+    width: 48%;
+    margin-bottom: 20px;
 }
 
-.feature-title {
-    cursor: pointer; /* Pointer cursor for clickable title */
-    color: #A0CF3C; /* Title color */
-    text-align: center; /* Center the title text */
-}
+    .feature h3 {
+        font-size: 24px;
+        color: #A0CF3C;
+    }
 
-.feature-content {
-    display: flex; /* Use flexbox layout */
-    align-items: center; /* Center vertically */
-    margin-top: 10px; /* Space above content */
-}
-
-.feature-content img {
-   width: 100%;
-        height: auto;
-    align-items: center;
-}
-
-.feature-content p {
- font-size: 16px;
+    .feature p {
+        font-size: 16px;
         line-height: 1.5;
-}
+    }
+
+    .feature img {
+        width: 100%;
+        height: auto;
+    }
 
 
 .tooltip-container {
@@ -177,10 +166,6 @@ footer img {
     opacity: 1; /* Fade in effect */
 }
 
-.feature-title {
-    cursor: pointer; /* Pointer cursor for clickable title */
-    color: #A0CF3C; /* Title color */
-}
 
 
 
@@ -206,6 +191,28 @@ footer img {
     width: 100%; /* Ensures full width like the footer */
     box-sizing: border-box; /* Ensures padding is included in the width */
     position: relative; /* Adjust based on layout needs */
+}
+
+.Business-section {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.Business-section h2 {
+    color: #248EC2;
+}
+
+.video-demo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.video-demo video {
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
 
 
