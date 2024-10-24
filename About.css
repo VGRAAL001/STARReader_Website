@@ -1,3 +1,4 @@
+/* General body styles */
 body {
     font-family: Verdana, sans-serif;
     margin: 0;
@@ -5,11 +6,14 @@ body {
     background-color: #f9f9f9;
 }
 
+/* Container for general layout */
 .container {
     width: 80%;
     margin: 0 auto;
+    max-width: 1200px;
 }
 
+/* Logo and header styles */
 .logo {
     display: flex;
     align-items: center;
@@ -21,7 +25,7 @@ body {
     margin-right: 15px;
 }
 
-
+/* Header and Navigation */
 header {
     background-color: #102540;
     color: white;
@@ -54,6 +58,7 @@ header nav ul li a.active {
     color: #67AAC3;
 }
 
+/* Footer */
 footer {
     background-color: #102540;
     color: white;
@@ -62,10 +67,11 @@ footer {
 }
 
 footer img {
-    height: 50px; /* Reduced footer image height */
+    height: 50px;
     margin-top: 10px;
 }
 
+/* About Section */
 .about {
     text-align: center;
     padding: 20px 0;
@@ -83,6 +89,7 @@ footer img {
     padding-right: 20px;
 }
 
+/* Read More Button */
 #read-more-btn {
     background-color: #248EC2;
     color: white;
@@ -99,6 +106,7 @@ footer img {
     background-color: #67AAC3;
 }
 
+/* Call to Action Button */
 .cta .btn {
     background-color: #A0CF3C;
     color: white;
@@ -111,6 +119,7 @@ footer img {
     margin-left: 5px;
 }
 
+/* Features Section */
 .features {
     display: flex;
     flex-wrap: wrap;
@@ -123,75 +132,60 @@ footer img {
     margin-bottom: 20px;
 }
 
-    .feature h3 {
-        font-size: 24px;
-        color: #A0CF3C;
-    }
+.feature h3 {
+    font-size: 24px;
+    color: #A0CF3C;
+}
 
-    .feature p {
-        font-size: 16px;
-        line-height: 1.5;
-    }
+.feature p {
+    font-size: 16px;
+    line-height: 1.5;
+}
 
-    .feature img {
-        width: 100%;
-        height: auto;
-    }
+.feature img {
+    width: 100%;
+    height: auto;
+}
 
-
+/* Tooltip styles */
 .tooltip-container {
     position: relative;
-    display: inline-block; /* Allow container to fit the title */
+    display: inline-block;
 }
 
 .tooltip-text {
-    visibility: hidden; /* Initially hide the tooltip */
-    width: 160px; /* Set a width */
-    background-color: #A0C8D6; /* Background color */
-    color: #248EC2; /* Text color */
-    text-align: center; /* Center text */
-    border-radius: 5px; /* Rounded corners */
-    padding: 5px; /* Padding */
-    position: absolute; /* Position the tooltip */
-    z-index: 1; /* Ensure tooltip is above other elements */
-    bottom: 125%; /* Position above the title */
-    left: 50%; /* Center the tooltip */
-    margin-left: -80px; /* Adjust to center the tooltip */
-    opacity: 0; /* Hide tooltip initially */
-    transition: opacity 0.3s; /* Transition for fade effect */
+    visibility: hidden;
+    width: 160px;
+    background-color: #A0C8D6;
+    color: #248EC2;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
 .tooltip-container:hover .tooltip-text {
-    visibility: visible; /* Show tooltip on hover */
-    opacity: 1; /* Fade in effect */
+    visibility: visible;
+    opacity: 1;
 }
 
+/* Call to Action (CTA) */
 .cta {
     background-color: #248EC2;
     color: white;
     text-align: center;
-    padding: 20px 0; /* Same as footer */
-    margin: 0 auto; /* Centers the section */
-    width: 100%; /* Ensures full width like the footer */
-    box-sizing: border-box; /* Ensures padding is included in the width */
-    position: relative; /* Adjust based on layout needs */
+    padding: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-    .cta h2 {
-        font-size: 28px;
-        margin-bottom: 20px;
-    }
-
-
-    
-
-    .cta p {
-        font-size: 18px;
-        margin-bottom: 30px;
-    }
-
-
-
+/* Considerations Section */
 .Considerations-section {
     background-color: #eef2f5;
     padding: 40px 0;
@@ -202,7 +196,7 @@ footer img {
     color: #002147;
 }
 
-.Considerations{
+.Considerations {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -213,108 +207,105 @@ footer img {
     width: 460px;
     padding: 20px;
 }
+
+/* Responsive Design */
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .container {
-        width: 95%; /* Make the container wider on small screens */
+        width: 95%;
     }
 
     .about h2 {
-        font-size: 24px; /* Adjust h2 font size */
+        font-size: 24px;
     }
 
     .about p {
-        font-size: 16px; /* Adjust paragraph font size */
+        font-size: 16px;
     }
 
     #read-more-btn, .cta .btn {
-        padding: 5px 8px; /* Adjust button padding */
-        font-size: 10px; /* Adjust button font size */
+        padding: 5px 8px;
+        font-size: 10px;
     }
 
     .features {
-        flex-direction: column; /* Stack features vertically */
-        align-items: center; /* Center features */
+        flex-direction: column;
+        align-items: center;
     }
 
     .feature {
-        width: 100%; /* Full width for feature on small screens */
-        margin-bottom: 15px; /* Adjust margin */
+        width: 100%;
+        margin-bottom: 15px;
     }
 
     .feature h3 {
-        font-size: 22px; /* Smaller font size for feature title */
+        font-size: 22px;
     }
 
     .feature p {
-        font-size: 14px; /* Smaller font size for feature description */
+        font-size: 14px;
     }
 
     .feature img {
-        width: 90%; /* Make images larger relative to the small screen */
+        width: 90%;
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    /* Add styles specific to small devices if needed */
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .about h2 {
-        font-size: 26px; /* Slightly increase h2 font size */
+        font-size: 26px;
     }
 
     .about p {
-        font-size: 17px; /* Slightly increase paragraph font size */
+        font-size: 17px;
     }
 
     .features {
-        justify-content: space-around; /* More space between features */
+        justify-content: space-around;
     }
 
     .feature {
-        width: 45%; /* Adjust feature width for medium screens */
+        width: 45%;
     }
 
     .feature img {
-        width: 75%; /* Slightly smaller for medium devices */
+        width: 75%;
     }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .container {
-        width: 80%; /* Keep default width for larger devices */
+        width: 80%;
     }
 
-
     .feature {
-        width: 48%; /* Maintain feature width */
+        width: 48%;
     }
 
     .feature img {
-        width: 70%; /* Maintain smaller size for larger devices */
+        width: 70%;
     }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .about h2 {
-        font-size: 28px; /* Maintain larger h2 font size */
+        font-size: 28px;
     }
 
     .about p {
-        font-size: 18px; /* Maintain standard paragraph size */
+        font-size: 18px;
     }
 
     #read-more-btn, .cta .btn {
-        padding: 5px 10px; /* Maintain button size */
-        font-size: 12px; /* Maintain button font size */
+        padding: 5px 10px;
+        font-size: 12px;
     }
 
     .feature img {
-        width: 60%; /* Make feature images smaller for extra-large devices */
+        width: 60%;
     }
 }
