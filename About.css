@@ -186,13 +186,15 @@ footer img {
 }
 
 .Considerations-section {
-    background-color: #eef2f5;
+    background-color: #fff;
     padding: 40px 0;
-    text-align: center;
+    
 }
 
 .Considerations-section h2 {
     color: #002147;
+    font-size: 30px;
+    text-align: center;
 }
 
 .Considerations {
@@ -200,9 +202,25 @@ footer img {
     align-items: center;
     justify-content: space-around;
     margin-top: 20px;
+    text-align: right;
+    flex-direction: row-reverse;
 }
 
 .Considerations img {
+    width: 460px;
+    padding: 20px;
+}
+
+
+.ConsiderationsUI {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.ConsiderationsUI img {
     width: 460px;
     padding: 20px;
 }
@@ -273,6 +291,15 @@ footer img {
     }
 
     .Considerations img {
+        width: 100%;
+        padding: 10px;
+    }
+    
+        .ConsiderationsUI {
+        flex-direction: column;
+    }
+
+    .ConsiderationsUI img {
         width: 100%;
         padding: 10px;
     }

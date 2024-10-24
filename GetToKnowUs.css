@@ -82,6 +82,25 @@ header nav ul li a.active {
     color: #67AAC3;
 }
 
+.image-container {
+    display: flex; /* Use flexbox to align images horizontally */
+    justify-content: center; /* Center the images */
+    align-items: center; /* Align images vertically in the middle */
+   
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.team-image, .teamsponsor-image {
+    width: 500px; /* Adjust the width to make the images smaller */
+    height: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+
 /* Footer styles */
 footer {
     background-color: #102540;
@@ -114,6 +133,8 @@ footer img {
 
 .member {
     width: 22%;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .member img {
@@ -123,6 +144,16 @@ footer img {
 .member h3 {
     color: #002147;
     margin-top: 15px;
+}
+
+    .contact-details {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666; /* Gray text for contact details */
+}
+
+.contact-details p {
+    margin: 5px 0;
 }
 
 /* Sponsor Section */
@@ -218,6 +249,9 @@ footer img {
     footer {
         padding: 15px 0; /* Adjust footer padding */
     }
+    
+
+    
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
