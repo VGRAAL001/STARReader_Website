@@ -316,12 +316,18 @@ footer img {
     .sponsor-info img {
         width: 100%; /* Ensure sponsor images are responsive */
         padding: 10px;
+        
     }
 
     /* Adjust footer padding */
     footer {
         padding: 10px 0;
     }
+    
+    .team-image, .teamsponsor-image {
+     flex-direction: column;
+}
+
 }
 
 
