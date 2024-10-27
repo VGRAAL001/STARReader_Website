@@ -288,7 +288,10 @@ footer img {
 
        .Considerations {
         flex-direction: column;
+           text-align: left;
     }
+    
+    
 
     .Considerations img {
         width: 100%;
